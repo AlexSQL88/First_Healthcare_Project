@@ -1,0 +1,14 @@
+show databases
+use sql_firsttable
+Select * from healthcare_dataset;  -- Main dataset unfiltered
+
+ -- Which treatment plan is used most frequently
+
+SELECT
+    Treatment_Plan,
+    COUNT(*) AS Patients_Count
+FROM healthcare_dataset
+GROUP BY Treatment_Plan
+ORDER BY Patients_Count DESC;
+
+

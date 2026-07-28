@@ -1,0 +1,11 @@
+show databases
+use sql_firsttable
+Select * from healthcare_dataset;  -- Main dataset unfiltered
+
+ -- Which diagnosis group has the highest average blood pressure?
+SELECT
+    Diagnosis,
+    ROUND(AVG(Blood_Pressure), 1) AS Average_Blood_Pressure
+FROM healthcare_dataset
+GROUP BY Diagnosis
+ORDER BY Average_Blood_Pressure DESC;

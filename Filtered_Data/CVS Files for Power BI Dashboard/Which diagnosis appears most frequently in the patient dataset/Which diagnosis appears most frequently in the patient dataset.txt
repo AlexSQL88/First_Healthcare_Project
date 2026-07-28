@@ -1,0 +1,11 @@
+show databases
+use sql_firsttable
+Select * from healthcare_dataset;  -- Main dataset unfiltered
+
+ -- Which diagnosis appears most frequently in the patient dataset?
+SELECT 
+    Diagnosis,
+    COUNT(*) AS Number_Of_Patients_Per_Diagnosis
+FROM healthcare_dataset
+GROUP BY Diagnosis
+ORDER BY Number_Of_Patients_Per_Diagnosis DESC;

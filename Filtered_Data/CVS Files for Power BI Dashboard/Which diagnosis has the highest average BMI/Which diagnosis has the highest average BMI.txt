@@ -1,0 +1,12 @@
+show databases
+use sql_firsttable
+Select * from healthcare_dataset;  -- Main dataset unfiltered
+
+ -- Which diagnosis has the highest average BMI?
+
+SELECT
+    Diagnosis,
+    ROUND(AVG(BMI), 1) AS Average_BMI
+FROM healthcare_dataset
+GROUP BY Diagnosis
+ORDER BY Average_BMI DESC;
