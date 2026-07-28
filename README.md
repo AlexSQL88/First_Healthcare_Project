@@ -1,2 +1,1 @@
-# First_Healthcare_Project
-Project using Excel, MySQL and PowerBI
+This project analyzes a healthcare dataset from Kaggle by filtering it into five key categories using MySQL. It explores the most frequent diagnoses, average blood pressure and BMI, age-related conditions, and common treatment plans. I have included the filtered data in a CSV file, the code in a text file, the Power BI file, and a PDF of the Power BI visuals so it is accessible even without Power BI. 
